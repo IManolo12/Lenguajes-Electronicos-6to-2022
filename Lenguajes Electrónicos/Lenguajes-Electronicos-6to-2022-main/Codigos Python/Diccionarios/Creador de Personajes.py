@@ -1,11 +1,3 @@
-# dic = {
-#     "Characters":{
-#         "Persona":{
-#             "Nombre": "bau",
-#             "Apellido": "ASD"
-#         }
-#     }
-# }
 dic = {
     "Characters":{}
 }
@@ -17,6 +9,7 @@ def CharacterDataInput(dec):
         dic["Characters"][f"Persona {i}"]["Clase"] = input("Ingrese la clase---Clases disponibles:\n- Mago\n- Healer\n- Barbaro\n- Archer\n- ArtistaMarcial\n")
         dic["Characters"][f"Persona {i}"]["Altura"] = int(input("Ingrese la altura: "))
         dic["Characters"][f"Persona {i}"]["Peso"] = int(input("Ingrese el peso: "))
+        dic["Characters"][f"Persona {i}"]["Dinero"] = int(input("Ingrese la cantidad de monedas de oro con las que empieza"))
         i+=1
         print(i)
         
